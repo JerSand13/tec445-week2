@@ -1,20 +1,29 @@
 #include <iostream>
 #include <vector>
+#include <string>
+using namespace std;
+
 
 int
 main ()
 {
-  std::vector<int> v;
-  for (int i : {5, 4, 3, 2, 1})
-  {
-    v.push_back (i);
+
+  int num;
+
+  cout << "Enter a number between 1 and 20 inclusive!" << endl;
+  cin >> num;
+
+  if (num == 13) {
+    cout << "You guess the magic number" << endl;
   }
 
-  for (auto val : v)
-  {
-    std::cout << val << ' ';
+  else if (num < 13) {
+    cout << "your guess is too low" << endl;
   }
-  std::cout << "\nHello, World!" << std::endl;
+
+  else if (num > 13) {
+    cout << "your guess is too high" << endl;
+  }
 
   return 0;
 }
