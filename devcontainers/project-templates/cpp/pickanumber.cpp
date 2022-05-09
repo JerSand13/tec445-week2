@@ -14,7 +14,7 @@ main ()
   cin >> num;
 
   if (num == 13) {
-    cout << "You guess the magic number" << endl;
+    cout << "You guessed the magic number" << endl;
   }
 
   else if (num < 13) {
@@ -26,4 +26,5 @@ main ()
   }
 
   return 0;
+
 }
